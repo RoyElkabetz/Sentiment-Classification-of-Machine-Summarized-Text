@@ -1,6 +1,7 @@
 # Text Summarization with Deep Learning
 
 This repository contains my project assignement made for the Technion's Electrical Engineering (EE) 046211 course "Deep Learning" by Prof. Daniel Soudry.
+---
 
 The directory `pre-trained examples` contains some interesting notebooks I collected from Text Summarization blog posts in the web. 
 
