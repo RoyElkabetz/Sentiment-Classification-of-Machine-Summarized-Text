@@ -6,7 +6,7 @@ The directory `pre-trained examples` contains some interesting notebooks I colle
 
 | #    | Subject                                        | Author            | Link to post     | Notebook              |
 |:----:|------------------------------------------------|:-----------------:|:----------------:|:---------------------:|
-| 1    | Text Summarization using BERT, GPT2, XLNet     | Sukanya Bag       | [medium](https://medium.com/analytics-vidhya/text-summarization-using-bert-gpt2-xlnet-5ee80608e961)    | [![nbviewer](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/pre-trained%20examples/Text_Summarization_using_BERT%2C_GPT2%2CXLNET.ipynb)|
+| 1    | Text Summarization using BERT, GPT2, XLNet     | Sukanya Bag       | [medium](https://medium.com/analytics-vidhya/text-summarization-using-bert-gpt2-xlnet-5ee80608e961)    | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/pre-trained%20examples/Text_Summarization_using_BERT%2C_GPT2%2CXLNET.ipynb)|
 
  
 
