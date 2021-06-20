@@ -13,3 +13,7 @@ The directory `pre-trained examples` contains some interesting notebooks I colle
  
 
  
+### TODO
+
+[ ] understand pytorch vocab object
+
