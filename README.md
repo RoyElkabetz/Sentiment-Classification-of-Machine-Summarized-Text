@@ -13,3 +13,15 @@ The directory `pre-trained examples` contains some interesting notebooks I colle
  
 
  
+### TODO
+
+- [x] train a text classifier
+- [x] understand pytorch vocab object
+- [ ] use a pre-trained text summarizer to summarize text
+- [ ] implement a text summarizer from scratch
+- [ ] save sammerized text as a CSV file
+- [ ] figure out how to load a CSV file as a torchtext dataset
+- [ ] compare results of summarized to unsummarized text classifications
+- [ ] use a pre-trined text classefier to classify text
+- [ ] compare results again with only pre-trained models
+
