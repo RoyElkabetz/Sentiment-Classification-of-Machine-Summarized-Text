@@ -15,7 +15,7 @@ This repository contains my project assignement made for the Technion's Electric
 - [ ] give links to CSV dataset files from Drive
 
 ## Report:
-- [ ] *. write down a project report:
+- [ ] * write down a project report:
 - [ ]   1. Introduction 
 - [ ]   2. Methods
 - [ ]   3. Experiments
