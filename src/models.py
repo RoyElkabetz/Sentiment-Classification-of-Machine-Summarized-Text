@@ -142,9 +142,9 @@ class Seq2Seq(nn.Module):
 
 class NewsSummaryModel(pl.LightningModule):
 
-    def __init__(self, model_name):
+    def __init__(self):
         super().__init__()
-        self.model = T5ForConditionalGeneration.from_pretrained(model_name, return_dict=True)
+        self.model = T5ForConditionalGeneration.from_pretrained('t5-base', return_dict=True)
 
     def forward(self, input_ids, attention_mask, decoder_attention_mask, labels=None):
         output = self.model(
