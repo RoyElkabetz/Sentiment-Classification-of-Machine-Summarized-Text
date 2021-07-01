@@ -3,25 +3,12 @@ import torch
 from torch import nn
 
 
-#########
-import json
-import pandas as pd
-import numpy as np
-import torch
-from pathlib import Path
-from torch.utils.data import Dataset, DataLoader
 import pytorch_lightning as pl
-from pytorch_lightning.callbacks import ModelCheckpoint
-from pytorch_lightning.loggers import TensorBoardLogger
-from sklearn.model_selection import train_test_split
-from termcolor import colored
-
 from transformers import (
     AdamW,
     T5ForConditionalGeneration,
     T5TokenizerFast as T5Tokenizer
 )
-#########
 
 class TextClassificationModel(nn.Module):
     """Simple text classification model (taken from Pytorch.Tutorials)"""
