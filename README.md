@@ -8,12 +8,12 @@ This repository contains my project assignement made for the Technion's Electric
 ## TODO
 
 ### Code:
-- [ ] add BLEU and perplexity scores to T5 summarizer model
-- [ ] expand the IMDB summarized dataset to equal positive and negative samples
-- [ ] arrange excisting code into .py and .ipynb files
+- [x] add BLEU and perplexity scores to T5 summarizer model
+- [ ] plot loss and perplexity curves
 - [ ] add an inference pipline to the T5 training class
+- [ ] expand the IMDB summarized dataset to equal positive and negative samples for 128, 64, 32, 16, 8 max length summaries.
+- [ ] arrange excisting code into .py and .ipynb files
 - [ ] loose the older .ipynb summarizer pipline
-- [ ] run the experiment for different summarization lengths
 - [ ] give links to CSV dataset files from Drive
 
 ## Report:
