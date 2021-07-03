@@ -15,6 +15,7 @@ This repository contains my project assignement made for the Technion's Electric
 - [ ] arrange excisting code into .py and .ipynb files
 - [ ] loose the older .ipynb summarizer pipline
 - [ ] give links to CSV dataset files from Drive
+- [ ] make the presentation in english and hebrew and upload to youtube
 
 ## Report:
 - [ ] write down a project report (up to 8 pages):
