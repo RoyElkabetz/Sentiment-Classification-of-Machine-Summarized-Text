@@ -1,5 +1,6 @@
-import torch
+import json
 import pandas as pd
+import torch
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 
@@ -46,6 +47,30 @@ class DataFrameDataset(Dataset):
         row = self.df.iloc[idx][self.only_columns]
         row_list = [item for item in row]
         return row_list
+
+
+class DataLogger:
+    """Simple data logger class"""
+    def __init__(self, logged_arguments: list):
+        self.logger = {}
+
+        for item in logged_arguments:
+            self.logger[item] = []
+
+    def log_up(self, variable, value):
+        self.logger[variable].append(value)
+
+    def dict_log(self, dict_bag):
+        for item in dict_bag:
+            self.logger[item].append(dict_bag[item])
+
+    def save_log(self, save_path):
+        json.dump(self.logger, open(save_path + ".json", 'w'))
+        print('Logger was saved.')
+
+    def load_log(self, load_path):
+        self.logger = json.load(open(load_path + ".json"))
+        print('Logger was loaded.')
 
 
 class IMDBfromCSV_DataModule(pl.LightningDataModule):
