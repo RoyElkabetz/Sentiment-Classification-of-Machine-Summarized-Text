@@ -22,11 +22,14 @@ __3. Train and test a text classifier for sentiment classification on summarized
 * [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb)
 
 ## Datasets
+### News Summary
 The **News Summary** dataset can be found on Kaggle [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/sunnysai12345/news-summary)
 
 The T5 model can take inputs of up to 512 tokens, so any sequence with more tokens was truncated in the training process. Here is a token count histograms of the News Summary train dataset. 
 ![image](Figures/news_summary_histogram.png)
 
+
+### Summarized-IMDB
 The summarized-IMDB datasets I generated with T5 can be downloaded by runing the following lines of code:
 
 
@@ -76,17 +79,6 @@ In this project, I attempted to find the relation between the length of a summar
 - [[1]](https://arxiv.org/abs/2010.11929) An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale.
 - [[2]](https://arxiv.org/abs/1409.1556) Very Deep Convolutional Networks for Large-Scale Image Recognition.
  
-
-## TODO
-
-## Report:
-- [ ] write down a project report (up to 8 pages):
-- [ ] 1. Introduction 
-- [ ] 2. Methods
-- [ ] 3. Experiments
-- [ ] 4. Conclusions
-- [ ] 5. Future work
-- [ ] 6. References
 
 
 ============================================================================================================
