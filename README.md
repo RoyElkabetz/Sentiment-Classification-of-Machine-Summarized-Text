@@ -10,19 +10,22 @@ In this project I will attempt to examine the idea of classifying machine summar
 > The code for this project split in to 3 main parts:
 
 __1. Fine-tune T5 into a summarizer with Transfer Learning:__
-
+* [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Lin-Sinorodin/Technion_046211-Deep_Learning_Project/blob/master/Project/train_classifier.ipynb)
+* (https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_summarization_using_T5.ipynb)
 
 __2. IMDB Dataset summarization pipeline:__
+* [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Lin-Sinorodin/Technion_046211-Deep_Learning_Project/blob/master/Project/train_classifier.ipynb)
+* (https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/T5_Summarizer_pipeline.ipynb)
 
-
-__3. Train and test a text classifier for sentiment classification on summarized IMDB reviews:__
-
+__3. Train and test a text classifier for sentiment classification on summarized-IMDB datasets:__
+* [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Lin-Sinorodin/Technion_046211-Deep_Learning_Project/blob/master/Project/train_classifier.ipynb)
+* (https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb)
 
 ## Datasets
 The **News Summary** dataset can be found on Kaggle [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/sunnysai12345/news-summary)
 
+The T5 model can take inputs of up to 512 tokens, so any sequence with more tokens was truncated in the training process. Here is a token count histograms of the News Summary train dataset. 
 ![image](Figures/news_summary_histogram.png)
->Token count histograms of the News Summary dataset.
 
 The summarized-IMDB datasets I generated with T5 can be downloaded by runing the following lines of code:
 
@@ -43,9 +46,9 @@ The summarized-IMDB datasets I generated with T5 can be downloaded by runing the
 
 `!gdown --id '1-3SD5xYj_R8VaxT15NWs_HbnR5tz7fmP' -O 'test_without_sampling.csv'`
 
+The title of each plot for the summarized-IMDB word count histograms describes the maximal length parameter value set to the T5 summarizer. Notice that the maximal length parameter of 100 causes a generated average word count of 70 words per summary. In general, the mean word count for each dataset is typically a few dozens of words less than the maximal length value that was set.
 
 ![image](Figures/IMDB_histogram.png)
->Token count histograms of the summarized-IMDB datasets.
 
 ## Model
 
