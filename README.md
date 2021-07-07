@@ -10,7 +10,7 @@ In this project I will attempt to examine the idea of classifying machine summar
 > The code for this project split in to 3 main parts:
 
 __1. Fine-tune T5 into a summarizer with Transfer Learning:__
-* [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Lin-Sinorodin/Technion_046211-Deep_Learning_Project/blob/master/Project/train_classifier.ipynb)
+* [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb#scrollTo=blFvDB1GBvDP)
 * [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_summarization_using_T5.ipynb)
 
 __2. IMDB Dataset summarization pipeline:__
