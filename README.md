@@ -22,7 +22,7 @@ __3. Train and test a text classifier for sentiment classification on summarized
 The **News Summary** dataset can be found on Kaggle [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/sunnysai12345/news-summary)
 
 
-![image](Figures/news_summary_histogram.png)
+![image](Figures/news_summary_histogram.png =50x)
 >Token count histograms of the News Summary dataset.
 
 The summarized-IMDB datasets I generated with T5 can be downloaded by runing the following lines of code:
@@ -45,7 +45,7 @@ The summarized-IMDB datasets I generated with T5 can be downloaded by runing the
 `!gdown --id '1-3SD5xYj_R8VaxT15NWs_HbnR5tz7fmP' -O 'test_without_sampling.csv'`
 
 
-![image](Figures/IMDB_histogram.png)
+![image](Figures/IMDB_histogram.png =50x)
 >Token count histograms of the summarized-IMDB datasets.
 
 ## Model
