@@ -21,7 +21,7 @@ __3. Train and test a text classifier for sentiment classification on summarized
 ## Datasets
 The **News Summary** dataset can be found on Kaggle [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/sunnysai12345/news-summary)
 
-<img src="drawing.jpg" alt="Figures/news_summary_histogram.png" width="50"/>
+<img src="drawing.jpg" alt="./Figures/news_summary_histogram.png" width="50"/>
 <!-- ![image](Figures/news_summary_histogram.png =50x) -->
 >Token count histograms of the News Summary dataset.
 
