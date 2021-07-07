@@ -23,13 +23,21 @@ The **News Summary** dataset can be found on Kaggle [![Kaggle](https://kaggle.co
 The summarized-IMDB datasets I generated with T5 can be downloaded by runing the following lines of code:
 
 
-Train: `!gdown --id '1EJD8f_PiymNmhaDuvxj27qTo2OMMruiP' -O 'train.csv'`
+**Train:** 
 
-Validation: `!gdown --id '1--t5cZIL81qBOLjbHxj6iDeXUez5zAvV' -O 'valid.csv'`
+`!gdown --id '1EJD8f_PiymNmhaDuvxj27qTo2OMMruiP' -O 'train.csv'`
 
-Test (with sampling): `!gdown --id '1-2-nT7vtLNMoiUMXuLcWp2wdCryIS9Ep' -O 'test_with_sampling.csv'`
+**Validation:**
 
-Test (without sampling): `!gdown --id '1-3SD5xYj_R8VaxT15NWs_HbnR5tz7fmP' -O 'test_without_sampling.csv'`
+`!gdown --id '1--t5cZIL81qBOLjbHxj6iDeXUez5zAvV' -O 'valid.csv'`
+
+**Test (with sampling):** 
+
+`!gdown --id '1-2-nT7vtLNMoiUMXuLcWp2wdCryIS9Ep' -O 'test_with_sampling.csv'`
+
+**Test (without sampling):** 
+
+`!gdown --id '1-3SD5xYj_R8VaxT15NWs_HbnR5tz7fmP' -O 'test_without_sampling.csv'`
 
 
 
