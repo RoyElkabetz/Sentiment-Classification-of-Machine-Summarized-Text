@@ -52,128 +52,39 @@ class DataFrameDataset(Dataset):
 class DataLogger:
     """Simple data logger class"""
     def __init__(self, logged_arguments: list):
+        """
+          Args:
+          logged_arguments (list): a list of strings - names of variables that we would like
+          to save along the training process.
+        """
         self.logger = {}
 
         for item in logged_arguments:
             self.logger[item] = []
 
     def log_up(self, variable, value):
+        """append a measurement to variable"""
         self.logger[variable].append(value)
 
     def dict_log(self, dict_bag):
+        """append a dictionary of measurements to variables"""
         for item in dict_bag:
             self.logger[item].append(dict_bag[item])
 
     def save_log(self, save_path):
+        """save the logger as json file"""
         json.dump(self.logger, open(save_path + ".json", 'w'))
         print('Logger was saved.')
 
     def load_log(self, load_path):
+        """load a json file as a logger"""
         self.logger = json.load(open(load_path + ".json"))
         print('Logger was loaded.')
 
 
-class IMDBfromCSV_DataModule(pl.LightningDataModule):
-    """IMDB Data module for pytorch-lightning"""
-    def __init__(self, vocab, tokenizer, data_dir: str = "path/to/dir", batch_size: int = 32):
-        super().__init__()
-        self.data_dir = data_dir
-        self.batch_size = batch_size
-        self.vocab = vocab
-        self.tokenizer = tokenizer
-        self.train_dataset = Dataset()
-        self.valid_dataset = Dataset()
-        self.test_dataset = Dataset()
-
-    def setup(self, stage=None):
-        self.train_dataset = DataFrameDataset(self.data_dir + '/train.csv', only_columns=['label', 'text'])
-        self.valid_dataset = DataFrameDataset(self.data_dir + '/valid.csv', only_columns=['label', 'text'])
-        self.test_dataset = DataFrameDataset(self.data_dir + '/test.csv', only_columns=['label', 'summary'])
-
-    def text_pipeline(self, x):
-        return self.vocab(self.tokenizer(x))
-
-    def label_pipeline(self, x):
-        num = 0
-        if x == 'pos':
-            num = 1
-        return num
-
-    def train_dataloader(self):
-        return DataLoader(self.train_dataset, batch_size=self.batch_size,
-                          shuffle=True, collate_fn=self.collate_batch)
-
-    def val_dataloader(self):
-        return DataLoader(self.valid_dataset, batch_size=self.batch_size,
-                          shuffle=False, collate_fn=self.collate_batch)
-
-    def test_dataloader(self):
-        return DataLoader(self.test_dataset, batch_size=self.batch_size,
-                          shuffle=False, collate_fn=self.collate_batch)
-
-    def collate_batch(self, batch):
-        label_list, text_list, offsets = [], [], [0]
-        for (_label, _text) in batch:
-            label_list.append(self.label_pipeline(_label))
-            processed_text = torch.tensor(self.text_pipeline(_text), dtype=torch.int64)
-            text_list.append(processed_text)
-            offsets.append(processed_text.size(0))
-        label_list = torch.tensor(label_list, dtype=torch.int64)
-        offsets = torch.tensor(offsets[:-1]).cumsum(dim=0)
-        text_list = torch.cat(text_list)
-        return label_list, text_list, offsets
-
-
-class IMDBClassificationTask(pl.LightningModule):
-    """IMDB task module for pytorch-lightning"""
-    def __init__(self, model):
-        super().__init__()
-        self.model = model
-
-    def forward(self, text, offsets):
-        return self.model(text=text, offsets=offsets)
-
-    def training_step(self, batch, batch_idx):
-        loss, acc = self._shared_eval_step(batch, batch_idx)
-        metrics = {'train_acc': acc, 'train_loss': loss}
-        self.log_dict(metrics, prog_bar=True)
-        return loss
-
-    def validation_step(self, batch, batch_idx):
-        loss, acc = self._shared_eval_step(batch, batch_idx)
-        metrics = {'valid_acc': acc, 'valid_loss': loss}
-        self.log_dict(metrics, prog_bar=True)
-        return loss
-
-    def test_step(self, batch, batch_idx):
-        loss, acc = self._shared_eval_step(batch, batch_idx)
-        metrics = {'test_acc': acc, 'test_loss': loss}
-        self.log_dict(metrics)
-        return loss
-
-    def _shared_eval_step(self, batch, batch_idx):
-        (label, text, offsets) = batch
-        pred_label = self.model(text, offsets)
-        loss = F.cross_entropy(pred_label, label)
-        acc = (pred_label.argmax(1) == label).sum().item()
-        count = len(label)
-        acc /= count
-        return loss, acc
-
-    def configure_optimizers(self):
-        optimizer = torch.optim.SGD(self.parameters(), lr=5.)
-        scheduler = torch.optim.lr_scheduler.StepLR(optimizer, 3, gamma=0.1)
-        lr_dict = {'optimizer': optimizer,
-                   'lr_scheduler': {'scheduler': scheduler,
-                                    'interval': 'epoch',
-                                    'monitor': 'valid_acc',
-                                    }
-                   }
-        return lr_dict
-
 
 class NewsSummaryDataset(Dataset):
-
+    """Dataset class for the News Summary dataset"""
     def __init__(
         self,
         data: pd.DataFrame,
@@ -195,7 +106,6 @@ class NewsSummaryDataset(Dataset):
         text = data_row['text']
         summary = data_row['summary']
 
-        # i added self
         text_encoding = self.tokenizer(
             text,
             max_length=self.text_max_token_len,
@@ -230,7 +140,7 @@ class NewsSummaryDataset(Dataset):
 
 
 class NewsSummaryDataModule(pl.LightningDataModule):
-
+    """A data module class with pytorch lightning for the training of T5"""
     def __init__(
         self,
         train_df: pd.DataFrame,
