@@ -48,17 +48,22 @@ The summarized-IMDB datasets I generated with T5 can be downloaded by runing the
 >Token count histograms of the summarized-IMDB datasets.
 
 ## Model
-The simple model architecture that used for the classification task was
+
+The text classifier architecture that was used for the sentiment classification is illustarted in the figure below. The model is comprised of a single embedding-bag layer followed by a linear fully-connected layer followed by a fully-connected layer with a single unit (binary layer). The $W_k$ variables stand for single words / tokens where ik are their index representation in the model’s vocabulary.
 
 ![image](Figures/classifier_model.png)
 
 ## Results
 
+
+Loss and Accuracy measured through the training process of the text classifier model.
+
 ![image](Figures/loss_acc.png)
-> Loss and Accuracy measured through the training process of the text classifier model.
+
+
+The classifier accuracy over the test sets. Each point in the graph describes the classifier’s accuracy of predicting the correct classes for the same 1000 test samples sharing the same maximal summary length. The orange data belong to the test sets generated without "sampling" and the blue data belong the ones generated with sampling.
 
 ![image](Figures/test_acc.png)
-> The classifier accuracy over the test sets. Each point in the graph describes the classifier’s accuracy of predicting the correct classes for the same 1000 test samples sharing the same maximal summary length. The orange data belong to the test sets generated without "sampling" and the blue data belong the ones generated with sampling
 
 ## Conclusion
 In this project, I attempted to find the relation between the length of a summarized text piece generated with a state-of-the-art machine summarizer to the amount of subjective information preserved in the machine summarization process. To quantify the amount of subjective information in a text piece I used a sentiment text classifier, and through its performance in classifying correctly the given text, I infer indirectly the quality of the summarization process. From the results I got, it seems that there is a tight connection between the length of the summary to the amount of subjective information kept in the summarized text through the summarization process. We see that shorter summary pieces contain less subjective information which makes them harder to classify in a positive/negative framework. The results are not unambiguous, that is because of a bias towards summaries of lengths longer than 60 words which have been used in the transfer learning process of the T5 fine-tune. To verify if this bias is the main cause of the results we got, we need to use a dataset of shorter summaries in the transfer learning process of the T5 model.
