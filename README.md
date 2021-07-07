@@ -19,7 +19,7 @@ __3. Train and test a text classifier for sentiment classification on summarized
 
 
 ## Datasets
-The dataset 
+*The **News Summary** dataset can be found on Kaggle *[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/sunnysai12345/news-summary)
 
 ## Results
 
@@ -50,7 +50,7 @@ The dataset
 
 
 
-<!-- ## The Code
+<!--  ## The Code
 > The code for this project split in to 2 parts:
 
 __1. Data exploration and feature extraction:__
@@ -167,6 +167,6 @@ on this dataset the VGG model (CNN based) performed much better than the ViT mod
 - [[2]](https://arxiv.org/abs/1409.1556) Very Deep Convolutional Networks for Large-Scale Image Recognition.
 
 
-
  -->
+ 
 
