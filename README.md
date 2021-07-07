@@ -19,7 +19,17 @@ __3. Train and test a text classifier for sentiment classification on summarized
 
 
 ## Datasets
-*The **News Summary** dataset can be found on Kaggle *[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/sunnysai12345/news-summary)
+The **News Summary** dataset can be found on Kaggle [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/sunnysai12345/news-summary)
+The summarized-IMDB datasets I generated with T5 can be downloaded by runing the following lines of code:
+
+
+Train: `!gdown --id '1EJD8f_PiymNmhaDuvxj27qTo2OMMruiP' -O 'train.csv'`
+Validation: `!gdown --id '1--t5cZIL81qBOLjbHxj6iDeXUez5zAvV' -O 'valid.csv'`
+Test (with sampling): `!gdown --id '1-2-nT7vtLNMoiUMXuLcWp2wdCryIS9Ep' -O 'test_with_sampling.csv'`
+Test (without sampling): `!gdown --id '1-3SD5xYj_R8VaxT15NWs_HbnR5tz7fmP' -O 'test_without_sampling.csv'`
+
+
+
 
 ## Results
 
