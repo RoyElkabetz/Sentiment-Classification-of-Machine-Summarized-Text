@@ -7,9 +7,18 @@
 In this project I will attempt to examine the idea of classifying machine summarized text with the objective of exploring the capabilities of state-of-the-art machine summarization and its biases towards objective information in short summarizations. For that I will use Transfer Learning to fine-tune Google's T5 model into a text summarizer, which will later be used in a summarization pipeline for the IMDB reviews dataset in varying summarization lengths.
 
 ## The Code
-> The code for this project is split in to 3 main parts:
+The code for this project is split in to 3 main parts:
 
-__1. Fine-tune T5 into a summarizer with Transfer Learning:__
+## List of Notebooks
+
+| #   | Subject                                         | Colab             | Nbviewer               |
+|:----:|------------------------------------------------|:-----------------:|:---------------------:|
+| 0    | Gaussian White Noise simulation                | [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/SEOP-and-NMR/blob/main/src/How_to_generate_White_Gaussian_Noise.ipynb)        | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/SEOP-and-NMR/blob/main/src/How_to_generate_White_Gaussian_Noise.ipynb)|
+| 1   | Fine-tune T5 into a summarizer with Transfer Learning                   | [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text/blob/main/notebooks/Text_summarization_using_T5.ipynb)        | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_summarization_using_T5.ipynb)|
+| 2   | IMDB Dataset summarization pipeline                  | [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text/blob/main/notebooks/T5_Summarizer_pipeline.ipynb)        | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/T5_Summarizer_pipeline.ipynb)|
+| 3   | Train and test a text classifier for sentiment classification on summarized-IMDB datasets                   | [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb#scrollTo=blFvDB1GBvDP)        | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb
+
+<!-- __1. Fine-tune T5 into a summarizer with Transfer Learning:__
 * [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text/blob/main/notebooks/Text_summarization_using_T5.ipynb)
 * [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_summarization_using_T5.ipynb)
 
@@ -19,7 +28,7 @@ __2. IMDB Dataset summarization pipeline:__
 
 __3. Train and test a text classifier for sentiment classification on summarized-IMDB datasets:__
 * [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb#scrollTo=blFvDB1GBvDP)
-* [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb)
+* [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb) -->
 
 ## Datasets
 ### News Summary
