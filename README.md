@@ -9,7 +9,7 @@ In this project I will attempt to examine the idea of classifying machine summar
 ## The Code
 The code for this project is split in to 3 main parts:
 
-## List of Notebooks
+### List of Notebooks
 
 | #   | Subject                                         | Colab             | Nbviewer               |
 |:----:|------------------------------------------------|:-----------------:|:---------------------:|
@@ -17,17 +17,7 @@ The code for this project is split in to 3 main parts:
 | 2   | IMDB Dataset summarization pipeline                  | [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text/blob/main/notebooks/T5_Summarizer_pipeline.ipynb)        | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/T5_Summarizer_pipeline.ipynb)|
 | 3   | Train and test a text classifier for sentiment classification on summarized-IMDB datasets                   | [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb#scrollTo=blFvDB1GBvDP)        | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb)
 
-<!-- __1. Fine-tune T5 into a summarizer with Transfer Learning:__
-* [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text/blob/main/notebooks/Text_summarization_using_T5.ipynb)
-* [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_summarization_using_T5.ipynb)
-
-__2. IMDB Dataset summarization pipeline:__
-* [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text/blob/main/notebooks/T5_Summarizer_pipeline.ipynb)
-* [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/T5_Summarizer_pipeline.ipynb)
-
-__3. Train and test a text classifier for sentiment classification on summarized-IMDB datasets:__
-* [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb#scrollTo=blFvDB1GBvDP)
-* [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/RoyElkabetz/Text-Summarization-with-Deep-Learning/blob/main/notebooks/Text_Classification_full_vs_machine_summarized.ipynb) -->
+This three notebooks are supported by the `utils.py` and `models.py` files in the [src](/src) folder.
 
 ## Datasets
 ### News Summary
