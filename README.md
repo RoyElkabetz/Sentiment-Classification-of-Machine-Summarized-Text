@@ -68,7 +68,7 @@ The classifier was trained on full-text IMDB reviews and then tested on full-tex
 ![image](Figures/loss_acc.png)
 
 
-The classifier accuracy over the test sets. Each point in the graph describes the classifier’s accuracy of predicting the correct classes for the same 1000 test samples sharing the same maximal summary length. The orange data belong to the test sets generated without "sampling" and the blue data belong the ones generated with sampling.
+Each point in the classifier's test accuracy i the graph below describes the accuracy of predicting the correct classes for the **same** 1000 test samples sharing the same maximal summary length. The orange data belong to the test sets generated without "sampling" and the blue data belong the ones generated with sampling. An explanation of the summarization process can be found in the project paper [Sentiment Classification of Machine Summarized-Text](/paper/Sentiment_Classification_of_Machine_Summarized_Text.pdf).
 
 ![image](Figures/test_acc.png)
 
