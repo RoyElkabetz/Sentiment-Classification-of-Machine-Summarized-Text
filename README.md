@@ -44,9 +44,9 @@ The summarized-IMDB datasets I generated with T5 can be downloaded by runing the
 | 4   | Test (without sampling)                   | `!gdown --id '1-3SD5xYj_R8VaxT15NWs_HbnR5tz7fmP' -O 'test_without_sampling.csv'`|
 
 The Train dataset is identical to the original IMDB Train from Pytorch. The Validation and Test were generated ni the following way:
-- [1] The original IMDB Test dataset was splited to (1000, 24000) samples.
-- [2] The 1000 samples were taken for test (They were the first 1000 in the original IMDB Test) and 24000 for validation.
-- [3] The 1000 Test samples were shuffled and summarized with two different methods: with and without sampling (see [`generate()`](https://huggingface.co/transformers/main_classes/model.html#transformers.generation_utils.GenerationMixin.generate)) and with 11 summarization lengths [120, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20].
+-  The original IMDB Test dataset was splited to (1000, 24000) samples.
+-  The 1000 samples were taken for test (They were the first 1000 in the original IMDB Test) and 24000 for validation.
+-  The 1000 Test samples were shuffled and summarized with two different methods: with and without sampling (see [`generate()`](https://huggingface.co/transformers/main_classes/model.html#transformers.generation_utils.GenerationMixin.generate)), and with 11 different summarization lengths [120, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20].
 
 
 
