@@ -80,7 +80,10 @@ In this project, I attempted to find the relation between the length of a summar
 - [[1]](https://arxiv.org/abs/1910.10683) Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer.
 
 ## Contact
+---
+
 Roy Elkabetz - [mailto](mailto:elkabetzroy@gmail.com)
+
 Project link - [https://github.com/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text](https://github.com/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text)
  
 
