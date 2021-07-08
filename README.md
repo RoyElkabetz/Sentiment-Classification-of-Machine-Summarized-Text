@@ -85,6 +85,8 @@ In this project, I attempted to find the relation between the length of a summar
 Roy Elkabetz - [elkabetzroy@gmail.com](mailto:elkabetzroy@gmail.com)
 
 Project link - [https://github.com/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text](https://github.com/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text)
+
+Project paper - [Sentiment_Classification_of_Machine_Summarized_Text](/paper/Sentiment_Classification_of_Machine_Summarized_Text.pdf)
  
 
 
