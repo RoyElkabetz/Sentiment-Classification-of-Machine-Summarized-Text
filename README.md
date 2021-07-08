@@ -63,7 +63,7 @@ The text classifier architecture that was used for the sentiment classification 
 ## Results
 
 
-Loss and Accuracy measured through the training process of the text classifier model.
+The classifier was trained on full-text IMDB reviews and then tested on full-texts and their summarizations in different lengths. Here are the Loss and Accuracy measured through the training process of the text classifier model 
 
 ![image](Figures/loss_acc.png)
 
