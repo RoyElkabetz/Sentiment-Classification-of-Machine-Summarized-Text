@@ -33,24 +33,8 @@ The T5 model can take inputs of up to 512 tokens, so any sequence with more toke
 The summarized-IMDB datasets I generated with T5 can be downloaded by runing the following lines of code:
 
 
-**Train:** 
 
-`!gdown --id '1EJD8f_PiymNmhaDuvxj27qTo2OMMruiP' -O 'train.csv'`
-
-**Validation:**
-
-`!gdown --id '1--t5cZIL81qBOLjbHxj6iDeXUez5zAvV' -O 'valid.csv'`
-
-**Test (with sampling):** 
-
-`!gdown --id '1-2-nT7vtLNMoiUMXuLcWp2wdCryIS9Ep' -O 'test_with_sampling.csv'`
-
-**Test (without sampling):** 
-
-`!gdown --id '1-3SD5xYj_R8VaxT15NWs_HbnR5tz7fmP' -O 'test_without_sampling.csv'`
-
-
-## List of Notebooks
+#### List of IMDB datasets
 
 | #   | Dataset                                         | Link             | 
 |:----:|------------------------------------------------|:-----------------:|
@@ -59,7 +43,10 @@ The summarized-IMDB datasets I generated with T5 can be downloaded by runing the
 | 3   | Test (with sampling)                   | `!gdown --id '1-2-nT7vtLNMoiUMXuLcWp2wdCryIS9Ep' -O 'test_with_sampling.csv'`|
 | 4   | Test (without sampling)                   | `!gdown --id '1-3SD5xYj_R8VaxT15NWs_HbnR5tz7fmP' -O 'test_without_sampling.csv'`|
 
-
+The Train dataset is identical to the original IMDB Train from Pytorch. The Validation and Test were generated ni the following way:
+- [1] The original IMDB Test dataset was splited to (1000, 24000) samples.
+- [2] The 1000 samples were taken for test (They were the first 1000 in the original IMDB Test) and 24000 for validation.
+- [3] The 1000 Test samples were shuffled and summarized with two different methods: with and without sampling (see [`generate()`](https://huggingface.co/transformers/main_classes/model.html#transformers.generation_utils.GenerationMixin.generate)) and with 11 summarization lengths [120, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20].
 
 
 
