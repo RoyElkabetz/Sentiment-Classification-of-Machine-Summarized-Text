@@ -1,4 +1,4 @@
-# Machine Summarized Text Sentiment Classification
+# Machine Summarized-Text Sentiment Classification
 
 > This repository contains my project assignement made for the Technion's Electrical Engineering (EE) 046211 course "Deep Learning" by Prof. Daniel Soudry.
 ---
