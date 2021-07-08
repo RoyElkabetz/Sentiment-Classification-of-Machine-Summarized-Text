@@ -11,7 +11,7 @@ The code for this project is devided between 3 main parts:
 
 ### List of Notebooks
 
-All the notebooks in this repository are contained in the `notebook` folder, and are compatible anad ready to run on google colab.
+All the notebooks in this repository are contained in the [`notebooks`](/notebooks) folder, and are compatible anad ready to run on google colab.
 
 | #   | Subject                                         | Colab             | Nbviewer               |
 |:----:|------------------------------------------------|:-----------------:|:---------------------:|
