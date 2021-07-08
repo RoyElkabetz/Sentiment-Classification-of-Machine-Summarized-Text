@@ -46,11 +46,11 @@ The summarized-IMDB datasets I generated with T5 can be downloaded by runing the
 The Train dataset is identical to the original IMDB Train from Pytorch. The Validation and Test were generated ni the following way:
 -  The original IMDB Test dataset was splited to (1000, 24000) samples.
 -  The 1000 samples were taken for test (They were the first 1000 in the original IMDB Test) and 24000 for validation.
--  The 1000 Test samples were shuffled and summarized with two different methods: with and without sampling (see [`generate()`](https://huggingface.co/transformers/main_classes/model.html#transformers.generation_utils.GenerationMixin.generate)), and with 11 different summarization lengths [120, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20].
+-  The 1000 Test samples were shuffled and summarized with two different methods: with and without sampling (see [`generate()`](https://huggingface.co/transformers/main_classes/model.html#transformers.generation_utils.GenerationMixin.generate)), and with 11 different summarization lengths of [120, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20] tokens.
 
 
 
-The title of each plot for the summarized-IMDB word count histograms describes the maximal length parameter value set to the T5 summarizer. Notice that the maximal length parameter of 100 causes a generated average word count of 70 words per summary. In general, the mean word count for each dataset is typically a few dozens of words less than the maximal length value that was set.
+Here are histograms of the token counts for each dataset. The title of each plot for the summarized-IMDB word count histograms describes the maximal length parameter value set to the T5 summarizer. Notice that the maximal length parameter of 100 causes a generated average word count of 70 words per summary. In general, the mean word count for each dataset is typically a few dozens of words less than the maximal length value that was set.
 
 ![image](Figures/IMDB_histogram.png)
 
