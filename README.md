@@ -23,7 +23,7 @@ These three notebooks are supported by the `utils.py` and `models.py` files in t
 
 ## Datasets
 ### News Summary
-The **News Summary** dataset can be found on Kaggle [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/sunnysai12345/news-summary)
+The **News Summary** dataset can be found on Kaggle in the next link --- [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/sunnysai12345/news-summary)
 
 The T5 model can take inputs of up to 512 tokens, so any sequence with more tokens was truncated in the training process. Here is a token count histograms of the News Summary train dataset. 
 ![image](Figures/news_summary_histogram.png)
