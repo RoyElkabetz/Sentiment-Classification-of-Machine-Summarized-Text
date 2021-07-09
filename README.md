@@ -86,7 +86,7 @@ Roy Elkabetz - [elkabetzroy@gmail.com](mailto:elkabetzroy@gmail.com)
 
 Project link - [https://github.com/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text](https://github.com/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text)
 
-Project paper - [Sentiment Classification of Machine Summarized-Text](/paper/Sentiment_Classification_of_Machine_Summarized_Text.pdf)
+Project paper - [Sentiment Classification of Machine Summarized-Text](/paper/paper - Sentiment_Classification_of_Machine_Summarized_Text.pdf)
  
 
 
