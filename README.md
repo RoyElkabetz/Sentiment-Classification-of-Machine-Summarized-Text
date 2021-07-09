@@ -6,7 +6,7 @@
 ## Introduction
 In this project I will attempt to examine the idea of classifying machine summarized text with the objective of exploring the capabilities of state-of-the-art machine summarization and its biases towards objective information in short summarizations. For that I will use Transfer Learning to fine-tune Google's T5 model into a text summarizer, which will later be used in a summarization pipeline for the IMDB reviews dataset in varying summarization lengths. Here is a flowchart of the project steps
 
-![](Figures/Project_flowchart.png | width=100)
+![](https://github.com/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text/blob/d78a640a460f2639f5a7392512bde75b2287d5eb/Figures/Project_flowchart.png | width=100)
 > The project flowchart: (1) Fine-tune Google’s T5 text model using Transfer Learning. (2) Having a state-of-the-art coherent T5-summarizer. (3) Constricting a Summarization Pipeline using the T5-summarizer. (4) Transferring the IMDB dataset to the summarization pipeline for. (5) Constructing and processing the summarized IMDB reviews into a batch of different datasets. (6, 7) Training a Text Classifier on the complete IMDB reviews. (8) Comparing performance of trained Classifier on complete and summarized IMDB reviews.
 
 
