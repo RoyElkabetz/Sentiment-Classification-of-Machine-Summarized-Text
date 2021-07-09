@@ -36,6 +36,9 @@ The T5 model can take inputs of up to 512 tokens, so any sequence with more toke
 ![image](Figures/news_summary_histogram.png)
 
 
+
+<img src="https://github.com/RoyElkabetz/Sentiment-Classification-of-Machine-Summarized-Text/blob/bf1a5393147178c51102edb05fa93c33c172d82d/Figures/news_summary_histogram.png" width="700" height="">
+
 ### Summarized-IMDB
 The summarized-IMDB datasets I generated with T5 can be downloaded by runing the following lines of code:
 
